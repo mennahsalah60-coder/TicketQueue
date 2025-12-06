@@ -40,10 +40,3 @@ serve.addEventListener("click", function () {
 
 // console.log(nums)
 // console.log(nowServing)
-
-// string = []
-// var countMap = {};
-// for (var i = 0; i < string.length; i++) {
-//     countMap[string.charAt(i)]++;
-// }
-// console.log(countMap)
