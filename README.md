@@ -38,7 +38,7 @@ This is a simple JavaScript queue application that allows users to:
 
 ## Live Demo
 
-👉 **Click here to try it:**  
+ **LiveDemo:**  
 🔗 https://mennahsalah60-coder.github.io/TicketQueue/
 
 ---
