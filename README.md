@@ -1,10 +1,10 @@
-<h1 align="center">🎫 TicketQueue</h1>
+<h1 align="center">TicketQueue</h1>
 
 <p align="center">A simple and interactive queue management system built with JavaScript</p>
 
 ---
 
-## 📌 Queue Management System
+## Queue Management System
 
 This is a simple JavaScript queue application that allows users to:
 
@@ -16,7 +16,7 @@ This is a simple JavaScript queue application that allows users to:
 
 ---
 
-## ✨ Features
+## Features
 
 | Feature | Description |
 |--------|------------|
@@ -28,7 +28,7 @@ This is a simple JavaScript queue application that allows users to:
 
 ---
 
-## 🛠 Technologies Used
+## Technologies Used
 
 - HTML  
 - CSS / Bootstrap  
@@ -36,7 +36,7 @@ This is a simple JavaScript queue application that allows users to:
 
 ---
 
-## 🚀 Live Demo
+## Live Demo
 
 👉 **Click here to try it:**  
 🔗 https://mennahsalah60-coder.github.io/TicketQueue/
