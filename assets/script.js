@@ -4,39 +4,40 @@ const result = document.querySelector(".names")
 const serve = document.querySelector(".serve")
 const now = document.querySelector(".now")
 
-const nums = []
+let count = 1
+
+const coustomers = []
 add.addEventListener("click", function () {
-    nums.push(input.value)
+    coustomers.push("#" + count + " --- " + input.value)
     result.innerHTML = ""
-    for (let i = 0; i < nums.length; i++) {
+    for (let i = 0; i < coustomers.length; i++) {
         result.innerHTML += `
                 <p class="blue rounded-start-4"></p>
-                <p class="name bg-primary-subtle rounded-end-3">#---${nums[i]}</p>`
+                <p class="name bg-primary-subtle rounded-end-3">${coustomers[i]}</p>`
     }
     input.value = ""
+    count++
 });
 
-const nowServing = []
+let nowServing = {}
 serve.addEventListener("click", function () {
-    let served = nums.shift()
-    nowServing.push(served)
+    let served = coustomers.shift()
+    nowServing.Now_Servinig = served
     now.innerHTML = ""
-    for (let x = 0; x < nowServing.length; x++) {
-        now.innerHTML += `
-            <p class="green rounded-start-4"></p>
-            <p class="name bg-success-subtle rounded-end-3"><span class="fs-5">Now Servinig :</span> --- ${nowServing[x]}</p>`
-    }
+    now.innerHTML += `
+        <p class="green rounded-start-4"></p>
+        <p class="name bg-success-subtle rounded-end-3"><span class="fs-5">Now Servinig : </span>${nowServing.Now_Servinig}</p>`
+
 
     result.innerHTML = "";
-    for (let i = 0; i < nums.length; i++) {
+    for (let i = 0; i < coustomers.length; i++) {
         result.innerHTML += `
             <p class="blue rounded-start-4"></p>
-            <p class="name bg-primary-subtle rounded-end-3">${nums[i]}</p>
+            <p class="name bg-primary-subtle rounded-end-3">${coustomers[i]}</p>
         `;
-        nowServing.shift()
     }
 
 });
 
-// console.log(nums)
+// console.log(coustomers)
 // console.log(nowServing)

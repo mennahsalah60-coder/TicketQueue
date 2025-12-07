@@ -13,12 +13,11 @@ section {
         .names {
             display: grid;
             grid-template-columns: 0fr 5fr;
-            font-size: 18px;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 22px;
 
             .blue {
                 border-left: 6px solid #0d6efd;
-                height: 35px;
+                min-height: 35px;
             }
         }
 
@@ -31,9 +30,10 @@ section {
                 height: 35px;
             }
 
-            .name{
-                font-size: 18px;
-                span{
+            .name {
+                font-size: 20px;
+
+                span {
                     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
                 }
             }
@@ -46,8 +46,8 @@ section {
 
 /* media query */
 @media screen and (max-width: 450px) {
-    section{
-        .all{
+    section {
+        .all {
             min-width: 100%;
         }
     }
