@@ -8,7 +8,9 @@ let count = 1
 
 const coustomers = []
 add.addEventListener("click", function () {
-    coustomers.push("#" + count + " --- " + input.value)
+    const time = new Date()
+
+    coustomers.push("#" + count + " --- " + input.value +" "+ "(" + time.getDay() +"/"+(time.getMonth() + 1)+"/"+time.getFullYear() + ")")
     result.innerHTML = ""
     for (let i = 0; i < coustomers.length; i++) {
         result.innerHTML += `
